@@ -20,7 +20,9 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `pt04_joan_lopez`
 --
-
+DROP DATABASE IF EXISTS `pt04_joan_lopez`;
+CREATE DATABASE IF NOT EXISTS `pt04_joan_lopez`;
+USE  `pt04_joan_lopez`;
 -- --------------------------------------------------------
 
 --
