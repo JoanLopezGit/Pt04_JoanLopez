@@ -10,7 +10,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $stmt = $conn->prepare("SELECT * FROM usuaris WHERE username = :username");
     $stmt->bindParam(':username', $username, PDO::PARAM_STR);
     $stmt->execute();
-
+    if ($password !== $confirm_password) {
+        $error_message = "Las contraseñas no coincideixen. Si us plau, torna-ho a intentar.";
+    }
+    
     if ($stmt->rowCount() > 0) {
         echo "Aquest usuari ja existeix. Torna a intentar-ho.";
     } else {
