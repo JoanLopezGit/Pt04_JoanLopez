@@ -5,7 +5,7 @@ require 'index.php';
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $username = $_POST['username'];
     $password = $_POST['password'];
-
+    $confirm_password = $_POST['confirm_password'];
     // Verificar si l'usuari ja existeix
     $stmt = $conn->prepare("SELECT * FROM usuaris WHERE username = :username");
     $stmt->bindParam(':username', $username, PDO::PARAM_STR);
