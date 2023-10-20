@@ -39,5 +39,13 @@
 			</ul>
 		</section>
 	</div>
+	<div class="opcions">
+    <?php if ($login_register) { ?>
+        <a href="login.vista.php">Iniciar Sessió</a>
+        <a href="registrar.vista.php">Registrar-se</a>
+    <?php } else { ?>
+        <span>Benvingut, <?php echo $_SESSION['username']; ?>!</span>
+    <?php } ?>
+</div>
 </body>
 </html>
