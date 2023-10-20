@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Encapçalament -->
 </head>
 <body>
     <h1>Iniciar Sessió</h1>
