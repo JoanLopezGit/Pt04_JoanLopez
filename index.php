@@ -87,7 +87,13 @@ $quantitat = obtenirTotalArticles($conn);
 
 // Calcular el número de pàgines
 $maxim_pagines = calcularMaximPagines($quantitat, $post_per_pag);
+// Verificar si el usuario está autenticado
+$login_register = true; // Por defecto, mostrar opciones de login y registro
 
+if (isset($_SESSION['username'])) {
+    // El usuario está autenticado, por lo que no mostraremos las opciones de login y registro
+    $login_register = false;
+}
 require 'index.vista.php';
 
 ?>
