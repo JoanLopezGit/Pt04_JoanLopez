@@ -13,6 +13,7 @@
             <input type="text" name="username" placeholder="Nombre de Usuario" required><br>
             <input type="password" name="password" placeholder="Contraseña" required><br>
             <input type="password" name="confirm_password" placeholder="Confirmar Contraseña" required><br>
+            <span class="error_message"><?php if(isset($error_message)) echo $error_message; ?></span>
             <input type="submit" value="Registrar">
         </form>
     </div>
