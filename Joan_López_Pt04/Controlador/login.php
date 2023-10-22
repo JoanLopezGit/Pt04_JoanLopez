@@ -2,6 +2,14 @@
 require_once("../Model/Model.php");
 require_once("../Controlador/session.php");
 
+/**
+ * Aquesta funció valida les dades d'un usuari.
+ *
+ * @param string $correu L'adreça electrònica de l'usuari.
+ * @param string $password La contrasenya de l'usuari.
+ *
+ * @return string Un missatge d'error si hi ha hagut algun problema amb les dades, o bé una cadena buida si les dades són correctes.
+ */
 function validarDades($correu, $password){
     $errors = "";
 
