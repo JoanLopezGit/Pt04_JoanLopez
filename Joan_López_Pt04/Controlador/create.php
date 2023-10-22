@@ -1,7 +1,7 @@
 <?php 
 require_once("../Model/Model.php");
 require_once("../Controlador/session.php");
-
+ 
 function validarDades($article){
     $errors="";
     if(empty($article)){
