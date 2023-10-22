@@ -1,4 +1,8 @@
 <?php
+/**
+ * Joan López Torrento
+ */
+
 require_once("../Model/Model.php");
 require_once("../Controlador/session.php");
 

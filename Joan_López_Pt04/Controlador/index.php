@@ -1,4 +1,7 @@
 <?php
+/**
+ * Joan López Torrento
+ */
 require_once("../Model/Model.php");
 function connectarBaseDades() {
     try {

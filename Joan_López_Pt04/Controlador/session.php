@@ -1,4 +1,7 @@
 <?php
+/**
+ * Joan López Torrento
+ */
 
 /**
  * Inicia una nova sessió.
