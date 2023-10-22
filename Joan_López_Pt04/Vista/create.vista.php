@@ -1,7 +1,6 @@
-/**
- * Joan López Torrento
- */
+<!-- Joan López Torrento -->
 <!DOCTYPE html>
+
 <html lang="ca">
 <head>
     <meta charset="UTF-8">
