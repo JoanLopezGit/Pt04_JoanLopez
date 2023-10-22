@@ -19,7 +19,7 @@ Estils
 Model
     Model.php
     pt04_joan_lopez.sql
-Vista
+Vista 
     create.vista.php
     delete.vista.php
     index.vista.php
